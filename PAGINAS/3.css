@@ -7,9 +7,54 @@
     font-family: "Rubik", sans-serif;
     font-size: 20px
 }
+.autor{
+    background-color: rgb(255, 255, 255);
+    border: 1px dashed white;
+    border-radius: 15px;
+    height: 50vw;
+    width: 92vh;
+    float: left;
+}
+.malba{
+    border-radius: 10px;
+    border: 2px solid white;
+    animation: go-back 1s;
+    width: 15vh;
+    margin-left: 6vh;
+    margin-top: 3vh;
+}
+@keyframes go-back {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 img {
     width: 70px;
+}
+#img-1{
+    /* padding-left: 10px; */
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 5px;
+    /* height: 200px; */
+    margin-right: 100px;
+}
+#img-2{
+    /* padding-left: 10px; */
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 5px;
+    margin-top:40px;
+    /* height: 200px; */
+    margin-right: 100px;
+}
+#imag{
+    float: left;
+    width: 100%;
 }
 
 #imagens {
@@ -23,6 +68,10 @@ img {
     transform: scale(1.3%);
     transition: 300ms ease;
 }
+/* #imag{
+    background-color: white;
+
+} */
 
 #imagens img {
     background-color: #E0BC00;
@@ -31,17 +80,30 @@ img {
 }
 
 #texto {
-    width: 40vw;
+    color: #090723;
+    width: 50vw;
+    /* columns: ; */
+    display: flex;
+    padding-top: 50px;
+    float: right;
+
+}
+.imagem1{
+    display: flex;
+    float: left;
+}
+#texto-o{
+    margin-top: 170px;
 }
 
 #c1 {
     animation: spin 15s linear infinite;
     position: absolute;
     transform: rotate(180deg);
-    width: 20rem;
+    width: 5rem;
     z-index: 1;
-    top: 126px;
-    left: 134px;
+    top: 20px;
+    left: 490px;
 }
 
 @keyframes spin {
@@ -66,36 +128,37 @@ img {
 
 @media (min-width: 1080px) {
     .main-container {
-        width: 100%;
-        height: 680px;
+        width: 90%;
+        height: 100%;
         display: flex;
         justify-content: space-evenly;
         background-color: #ffffffdd;
         filter: blur(0.1px);
         align-items: center;
-        text-shadow: 0px 0px 5px #000;
+        /* text-shadow: 0px 0px 5px #000; */
         position: relative;
-        margin-top: 80px;
+        margin-top: 0px;
+        margin-left: 150px;
     }
 }
 
 #c2 {
-    width: 21rem;
+    width: 5.25rem;
     position: absolute;
     z-index: 0;
-    top: 119px;
-    left: 127px;
+    top: 18px;
+    left: 488px;
 
 }
 
 #c3 {
     animation: spin 7s reverse infinite;
-    width: 18rem;
+    width: 4.5rem;
     transform: rotate(180deg);
     position: absolute;
     z-index: 0;
-    top: 145px;
-    left: 153px;
+    top: 25px;
+    left: 495px;
 
 }
 
@@ -124,10 +187,10 @@ img {
     animation: spin 6s linear infinite;
     position: absolute;
     transform: rotate(180deg);
-    width: 16rem;
+    width: 4rem;
     z-index: 1;
-    top: 160px;
-    left: 170px;
+    top: 31px;
+    left: 501px;
 }
 
 @keyframes spin {
@@ -152,10 +215,10 @@ img {
 
 #logo {
     position: absolute;
-    width: 10rem;
+    width: 2.5rem;
     z-index: 1;
-    top: 210px;
-    left: 245px;
+    top: 47px;
+    left: 517px;
 }
 
 #txt {
@@ -270,22 +333,25 @@ nav {
 }
 
 section {
-    width: 100%;
-    height: 90vh;
+    margin-left: 250px;
+    width: 75%;
+    height: 100%;
 }
 
 .main-container {
-    width: 100%;
-    height: 735px;
+    width: 75%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: #ffffffdd;
 
     filter: blur(0.1px);
     align-items: center;
-    text-shadow: 0px 0px 5px #000;
+    /* text-shadow: 0px 0px 5px #000; */
     position: relative;
-    margin-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 150px;
 
 }
 
@@ -300,7 +366,34 @@ section {
 .main-container .image img {
     width: 100%;
 }
+.esquerda{
 
+    margin-bottom: 930px;
+    margin-left: 95px;
+    width: 17vw;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.esquerda img{
+    background-color: #E0BC00;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+.direita{
+    margin-bottom: 940px;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 17vw;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.direita img{
+    background-color: #E0BC00;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 
 
 @keyframes animate {
@@ -319,15 +412,16 @@ section {
 
 .main-container .content {
     color: white;
-    width: 40%;
+    width: 100%;
     min-height: 100px;
     position: absolute;
-    left: 700px;
-    top: 180px;
+    left: 42px;
+    top: 142px;
     text-align: left;
 }
 
 .content h1 {
+    text-shadow: 0px 0px 5px #000;
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
@@ -379,6 +473,30 @@ section {
     color: black;
     background-color: #a0422a;
     filter: drop-shadow(0 0 10px #a0422a);
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+}
+
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+
+.btn:hover::after {
+    margin-top: -8px;
 }
 
 .content button {
