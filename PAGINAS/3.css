@@ -11,17 +11,36 @@
     background-color: rgb(255, 255, 255);
     border: 1px dashed white;
     border-radius: 15px;
-    height: 50vw;
+    height: 40vw;
     width: 92vh;
     float: left;
+    animation: go-back 1s;
+}
+@keyframes go-back {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .malba{
     border-radius: 10px;
     border: 2px solid white;
     animation: go-back 1s;
-    width: 15vh;
+    width: 17vh;
     margin-left: 6vh;
     margin-top: 3vh;
+    height: 25vh;
+}
+.malba2{
+    border-radius: 10px;
+    border: 2px solid white;
+    animation: go-back 1s;
+    width: 17vh;
+    margin-left: 6vh;
+    margin-top: 14vh;
+    height: 25vh;
 }
 @keyframes go-back {
     0% {
@@ -80,16 +99,17 @@ img {
 }
 
 #texto {
-    color: #090723;
-    width: 50vw;
-    /* columns: ; */
-    display: flex;
-    padding-top: 50px;
-    float: right;
+    color: #ffffff;
+    width: 36vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    /* display: flex; */
+    padding-top: 16px;
+    float: left;
 
 }
 .imagem1{
-    display: flex;
+    /* display: flex; */
     float: left;
 }
 #texto-o{
@@ -132,10 +152,10 @@ img {
         height: 100%;
         display: flex;
         justify-content: space-evenly;
-        background-color: #ffffffdd;
+        background-color: #000000dd;
         filter: blur(0.1px);
         align-items: center;
-        /* text-shadow: 0px 0px 5px #000; */
+        text-shadow: 0px 0px 5px #000;
         position: relative;
         margin-top: 0px;
         margin-left: 150px;
@@ -413,7 +433,7 @@ section {
 .main-container .content {
     color: white;
     width: 100%;
-    min-height: 100px;
+    min-height: px;
     position: absolute;
     left: 42px;
     top: 142px;

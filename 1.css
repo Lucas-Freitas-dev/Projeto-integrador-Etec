@@ -279,7 +279,7 @@ section {
     height: 735px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #ffffffdd;
+    background-color: #000000dd;
 
     filter: blur(0.1px);
     align-items: center;

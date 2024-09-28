@@ -25,12 +25,15 @@ img {
     margin-left: 0%;
     padding-top: 5px;
     margin-top:40px;
+    background-color: white;
+    border-radius: 35px;
     /* height: 200px; */
     margin-right: 100px;
 }
 #imag{
     float: left;
-    width: 100%;
+    width: 20vw;
+    margin-left: 30%;
 }
 
 #imagens {
