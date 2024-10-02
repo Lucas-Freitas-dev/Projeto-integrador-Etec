@@ -416,6 +416,19 @@ section {
     border-radius: 50%;
     filter: drop-shadow(1px 1px 1px #000000);
 }
+.direita a:hover{
+    
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
+.esquerda a:hover{
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
 
 
 @keyframes animate {

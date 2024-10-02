@@ -415,6 +415,19 @@ section {
     border-radius: 50%;
     filter: drop-shadow(1px 1px 1px #000000);
 }
+.direita a:hover{
+    
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
+.esquerda a:hover{
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
 
 
 @keyframes animate {
@@ -507,7 +520,7 @@ section {
     text-decoration: none;
 }
 .btn, .btn-outline-light{
-    margin-left: 4vw;
+    margin-left: vw;
 
 }
 
@@ -524,9 +537,10 @@ section {
 } */
 
 .content button {
-    width: 50%;
+    width: 57%;
     height: 6vh;
-    margin: 30px;
+    margin-right: 7vw;
+    margin-top: 3vw;
     background-color: #8B7C2E;
     color: white;
     border: none;
@@ -541,13 +555,45 @@ section {
     position: absolute;
 }
 
-.content button:hover {
+.content button:hover
+     {
     scale: 1.1;
-    color: #000000;
+    color: #ffffff;
     border: 2px solid #8B7C2E;
     background-color: transparent;
     font-weight: 700;
     box-shadow: 0 0 40px #8B7C2E;
+}
+body {
+    width: 100%;
+    background: url(img/fundo-removebg-preview\ \(1\).png);
+    height: 100vh;
+    overflow: hidden;
+    background-color: #090723;
+}
+#exampleFormControlTextarea1{
+    display: flex;
+    box-shadow: 2px 2px 20px #8B7C2E;
+    border: 1px solid #8B7C2E;
+    border-radius: 8px;
+    width: 37vw;
+    height: 2vw;
+}
+#exampleFormControlTextarea2{
+    display: flex;
+    box-shadow: 2px 2px 20px #8B7C2E;
+    border: 1px solid #8B7C2E;
+    border-radius: 8px;
+    width: 37vw;
+    height: 6vw;
+}
+#exampleFormControlInput1{
+    display: flex;
+    box-shadow: 2px 2px 20px #8B7C2E;
+    border: 1px solid #8B7C2E;
+    border-radius: 8px;
+    width: 37vw;
+    height: 2vw;
 }
 
 @media (max-width:884px) {

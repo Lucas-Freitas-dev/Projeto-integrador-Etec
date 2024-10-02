@@ -12,8 +12,8 @@
     border: 3px solid #8B7C2E;
     border-radius: 15px;
     height: 41vw;
-    width: 92vh;
-    float: left;
+    width: 52vw;
+    float: center;
     animation: go-back 1s;
 }
 @keyframes go-back {
@@ -251,7 +251,6 @@ body {
     width: 100%;
     background: url(img/fundo-removebg-preview\ \(1\).png);
     height: 100vh;
-    overflow: hidden;
     background-color: #090723;
 }
 
@@ -414,7 +413,19 @@ section {
     border-radius: 50%;
     filter: drop-shadow(1px 1px 1px #000000);
 }
-
+.direita a:hover{
+    
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
+.esquerda a:hover{
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
 
 @keyframes animate {
     0% {
@@ -522,7 +533,8 @@ section {
 .content button {
     width: 50%;
     height: 6vh;
-    margin: 30px;
+    margin-right: 13vw;
+    margin-bottom: 300px;
     background-color: #a0422a;
     color: white;
     border: none;
@@ -599,4 +611,16 @@ section {
     .main-container button {
         margin-top: 15px;
     }
+}
+footer {
+    width: 100vw;
+    height: 8vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    background: #090723;
+    color: #5a5a5a;
+    font-size: 20px;
+    box-sizing: border-box;
 }

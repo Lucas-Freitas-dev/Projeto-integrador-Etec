@@ -230,8 +230,8 @@ img {
 body {
     width: 100%;
     background: url(img/fundo-removebg-preview\ \(1\).png);
-    height: 100%;
-    overflow: hidden;
+    height: 96vh;
+
     background-color: #090723;
 }
 
@@ -340,7 +340,7 @@ section {
 
 .main-container {
     width: 75%;
-    height: 96%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: #000000dd;
@@ -369,7 +369,8 @@ section {
 .esquerda{
 
     margin-bottom: 930px;
-    margin-left: 95px;
+    margin-left: 100px;
+    margin-top: 10px;
     width: 17vw;
     display: flex;
     justify-content: space-between;
@@ -381,7 +382,7 @@ section {
     filter: drop-shadow(1px 1px 1px #000000);
 }
 .direita{
-    margin-bottom: 940px;
+    margin-bottom: 930px;
     margin-left: 100px;
     margin-top: 10px;
     width: 17vw;
@@ -396,15 +397,16 @@ section {
 }
 
 .direita a:hover{
+    
     border-width: 3px; 
     border-style: solid; 
-    border-color:  white; 
+    border-color:  #E0BC00; 
     border-radius: 100%;
 }
 .esquerda a:hover{
     border-width: 3px; 
     border-style: solid; 
-    border-color:  white; 
+    border-color:  #E0BC00; 
     border-radius: 100%;
 }
 @keyframes animate {
@@ -592,13 +594,15 @@ section {
     }
 }
 footer {
-    width: 100%;
-    height: 4vw;
+    width: 100vw;
+    height: 8vw;
+    margin-left: -14vw;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: justify;
     background: #090723;
     color: #5a5a5a;
+    font-size: 20px;
     box-sizing: border-box;
 }

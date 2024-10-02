@@ -61,6 +61,15 @@ img {
 #texto {
     color: #ffffff;
     width: 50vw;
+    filter: blur(0.1px);
+    align-items: center;
+        text-shadow: 0px 0px 5px #000;
+    position: relative;
+    margin-top: 4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-top: 19px;
+    margin: 1vw;
     /* columns: ; */
 
 }
@@ -207,7 +216,6 @@ body {
     width: 100%;
     background: url(img/fundo-removebg-preview\ \(1\).png);
     height: 100vh;
-    overflow: hidden;
     background-color: #090723;
 }
 
@@ -369,6 +377,19 @@ section {
     background-color: #E0BC00;
     border-radius: 50%;
     filter: drop-shadow(1px 1px 1px #000000);
+}
+.direita a:hover{
+    
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
+}
+.esquerda a:hover{
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  #E0BC00; 
+    border-radius: 100%;
 }
 
 
@@ -554,5 +575,35 @@ section {
 
     .main-container button {
         margin-top: 15px;
+    }
+}
+footer {
+    width: 100vw;
+    height: 8vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    background: #090723;
+    color: #5a5a5a;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.borda{
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #8B7C2E;
+    border-radius: 15px;
+    height: 42vw;
+    width: 92vh;
+    float: left;
+    margin-top: 1vw;
+    animation: go-back 1s;
+}
+@keyframes go-back {
+    0% {
+        transform: translateY(-2vw);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
