@@ -1,0 +1,6 @@
+#italico{
+
+  font-style: italic;
+} 
+
+Só coloque isso no CSS original, pois serve para colocar itálico em uma parte do text.
